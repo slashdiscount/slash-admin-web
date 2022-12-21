@@ -13,6 +13,8 @@ export interface IStateType {
     root: IRootStateType;
     notifications: INotificationState;
     account: IAccount;
+    searchResult : ISearchResultState;
+    bulkCheckBox : IBulkCheckBoxState
 }
 
 export interface IActionBase {
@@ -22,4 +24,12 @@ export interface IActionBase {
 
 export interface INotificationState {
     notifications: INotification[];
+}
+
+export interface ISearchResultState {
+    commonSearchReducer: any;
+}
+
+export interface IBulkCheckBoxState {
+    bulkCheckBoxReducer: any;
 }

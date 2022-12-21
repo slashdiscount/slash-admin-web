@@ -19,6 +19,11 @@ function TextInput(props: TextInputProps): JSX.Element {
             [`Value can't have more than ${props.maxLength} characters`, "is-invalid"] : ["", "is-valid"];
         }
 
+        if (!error) {
+            [error, validClass] = (props.minLength && elementValue && elementValue.length < (props.minLength)) ?
+            [`Value should have ${props.minLength} characters`, "is-invalid"] : ["", "is-valid"];
+        }
+
         props.onChange({ value: elementValue, error: error, touched: touched, field: props.field });
 
         setTouch(true);
@@ -36,7 +41,9 @@ function TextInput(props: TextInputProps): JSX.Element {
                 onChange={onValueChanged}
                 className={`form-control ${props.inputClass} ${htmlClass}`}
                 id={`id_${props.label}`}
-                placeholder={props.placeholder} />
+                placeholder={props.placeholder}
+                disabled = {props.disabled ? props.disabled : false}
+                 />
             {error ?
                 <div className="invalid-feedback">
                     {error}

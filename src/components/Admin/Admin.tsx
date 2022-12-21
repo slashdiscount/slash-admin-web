@@ -4,6 +4,12 @@ import TopMenu from "../TopMenu/TopMenu";
 import { Switch, Route } from "react-router";
 import Home from "../Home/Home";
 import Notifications from "../../common/components/Notification";
+import Users from '../Users/Users'
+import CreateUser from "../Users/CreateUser";
+import EditUser from "../Users/EditUser";
+import UserRewards from "../Users/Rewards/UserRewards";
+import Transactions from "../Transactions/Transactions";
+import UserRefferals from "../Users/Refferals/UserRefferals";
 
 const Admin: React.FC = () => {
 
@@ -16,6 +22,12 @@ const Admin: React.FC = () => {
           <TopMenu />
           <div className="container-fluid">
             <Switch>
+              <Route path={`/users`}><Users /></Route>
+              <Route path={`/create-user`}><CreateUser /></Route>
+              <Route path={`/edit-user/:id`}><EditUser /></Route>
+              <Route path={`/user-rewards/:id`}><UserRewards /></Route>
+              <Route path={`/transactions`}><Transactions /></Route>
+              <Route path={`/user-refferals/:id`}><UserRefferals /></Route>
               <Route path="/"><Home /></Route>
             </Switch>
           </div>

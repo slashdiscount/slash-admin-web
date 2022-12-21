@@ -35,11 +35,11 @@ const Login: React.FC = () => {
     }
     try {
       let login = await Axios.post(`${API_URL}/login`,loginData);
-
+      console.log("login.data.data.user", login.data.data.user)
       if(login && login.data.status === 200){
         localStorage.setItem('token', login.data.data.token);
-        localStorage.setItem('user', login.data.data.user);
-        sendLoginDispatch(login.data.data.user)
+        localStorage.setItem('user', login.data.data.user ? login.data.data.user : 'admin');
+        sendLoginDispatch(login.data.data.user ? login.data.data.user : 'admin')
         toast.success('Login successfully !!!', {
           position: toast.POSITION.TOP_RIGHT
       });
