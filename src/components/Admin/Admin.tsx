@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import LeftMenu from "../LeftMenu/LeftMenu";
 import TopMenu from "../TopMenu/TopMenu";
 import { Switch, Route } from "react-router";
-import Home from "../Home/Home";
+import DashBoard from "../DashBoard/DashBoard";
 import Notifications from "../../common/components/Notification";
 
 const Admin: React.FC = () => {
@@ -16,7 +16,7 @@ const Admin: React.FC = () => {
           <TopMenu />
           <div className="container-fluid">
             <Switch>
-              <Route path="/"><Home /></Route>
+              <Route path="/"><DashBoard /></Route>
             </Switch>
           </div>
         </div>
