@@ -1,0 +1,13 @@
+.white-breadcrumb {
+    background-color: white !important;
+    margin-top: 15px !important;
+}
+
+.portlet {
+    max-height: 567px;
+    /* overflow-y: hidden; */
+}
+
+.slider-image-portlet {
+    max-height: 684px;
+}
