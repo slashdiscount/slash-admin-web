@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import LeftMenu from "../LeftMenu/LeftMenu";
 import TopMenu from "../TopMenu/TopMenu";
 import { Switch, Route } from "react-router";
-import Home from "../Home/Home";
+import DashBoard from "../DashBoard/DashBoard";
 import Notifications from "../../common/components/Notification";
 import Users from '../Users/Users'
 import CreateUser from "../Users/CreateUser";
@@ -25,6 +25,7 @@ const Admin: React.FC = () => {
           <TopMenu />
           <div className="container-fluid">
             <Switch>
+<<<<<<< HEAD
               <Route path={`/users`}><Users /></Route>
               <Route path={`/create-user`}><CreateUser /></Route>
               <Route path={`/edit-user/:id`}><EditUser /></Route>
@@ -35,6 +36,9 @@ const Admin: React.FC = () => {
               <Route path={`/edit-slider-image/:id`}><EditSliderImages /></Route>
               <Route path={`/create-slider-image`}><CreateSliderImage /></Route>
               <Route path="/"><Home /></Route>
+=======
+              <Route path="/"><DashBoard /></Route>
+>>>>>>> develop
             </Switch>
           </div>
         </div>
