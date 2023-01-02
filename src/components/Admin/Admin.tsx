@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import LeftMenu from "../LeftMenu/LeftMenu";
 import TopMenu from "../TopMenu/TopMenu";
 import { Switch, Route } from "react-router";
-import Home from "../Home/Home";
+import DashBoard from "../DashBoard/DashBoard";
 import Notifications from "../../common/components/Notification";
 import Users from '../Users/Users'
 import CreateUser from "../Users/CreateUser";
@@ -28,7 +28,7 @@ const Admin: React.FC = () => {
               <Route path={`/user-rewards/:id`}><UserRewards /></Route>
               <Route path={`/transactions`}><Transactions /></Route>
               <Route path={`/user-refferals/:id`}><UserRefferals /></Route>
-              <Route path="/"><Home /></Route>
+              <Route path="/"><DashBoard /></Route>
             </Switch>
           </div>
         </div>
