@@ -54,6 +54,13 @@ const LeftMenu: React.FC = () => {
                         <span>Transactions</span>
                     </a>
                 </li> 
+                <hr className="sidebar-divider my-0" />
+                <li className="nav-item">
+                    <Link className="nav-link" to={`/contents`}>
+                        <i className="fas fa-fw fa-bars"></i>
+                        <span>Contents</span>
+                    </Link>
+                </li> 
             </ul>
         </Fragment>
     );
