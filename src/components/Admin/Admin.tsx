@@ -25,7 +25,6 @@ const Admin: React.FC = () => {
           <TopMenu />
           <div className="container-fluid">
             <Switch>
-<<<<<<< HEAD
               <Route path={`/users`}><Users /></Route>
               <Route path={`/create-user`}><CreateUser /></Route>
               <Route path={`/edit-user/:id`}><EditUser /></Route>
@@ -35,10 +34,7 @@ const Admin: React.FC = () => {
               <Route path={`/slider-images`}><SliderImage /></Route>
               <Route path={`/edit-slider-image/:id`}><EditSliderImages /></Route>
               <Route path={`/create-slider-image`}><CreateSliderImage /></Route>
-              <Route path="/"><Home /></Route>
-=======
               <Route path="/"><DashBoard /></Route>
->>>>>>> develop
             </Switch>
           </div>
         </div>
