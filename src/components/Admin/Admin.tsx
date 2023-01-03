@@ -14,6 +14,8 @@ import SliderImage from "../SliderImages/SliderImages";
 import EditSliderImages from "../SliderImages/EditSliderImages";
 import CreateSliderImage from "../SliderImages/CreateSliderImage"
 
+import Contents from "../Contents/Contents";
+import EditContents from "../Contents/EditContents";
 const Admin: React.FC = () => {
 
   return (
@@ -34,6 +36,8 @@ const Admin: React.FC = () => {
               <Route path={`/slider-images`}><SliderImage /></Route>
               <Route path={`/edit-slider-image/:id`}><EditSliderImages /></Route>
               <Route path={`/create-slider-image`}><CreateSliderImage /></Route>
+              <Route path={`/contents`}><Contents /></Route>
+              <Route path={`/edit-content`}><EditContents /></Route>
               <Route path="/"><DashBoard /></Route>
             </Switch>
           </div>
