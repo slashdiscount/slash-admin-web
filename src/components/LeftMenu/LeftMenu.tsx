@@ -62,7 +62,7 @@ const LeftMenu: React.FC = () => {
                     </Link>
                 </li>
                 <hr className="sidebar-divider my-0" />
-                    <li>
+                    <li className="nav-item">
                     <Link className="nav-link" to={`/contents`}>
                         <i className="fas fa-fw fa-bars"></i>
                         <span>Contents</span>
