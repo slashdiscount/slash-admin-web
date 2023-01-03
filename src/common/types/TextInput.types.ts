@@ -7,6 +7,8 @@ export type TextInputProps = {
     value: string,
     type?: string,
     maxLength: number,
+    minLength?: number,
     inputClass?: string,
     field: string
+    disabled ?: boolean
 };

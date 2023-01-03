@@ -33,7 +33,7 @@ function SelectInput(props: SelectProps): JSX.Element {
         <Fragment>
             <label htmlFor={`${props.id}`}>{props.label}</label>
             <select
-                value={value}
+                value={value ? value : props.value}
                 id={`${props.id}`}
                 className={`form-control ${props.inputClass ? props.inputClass : ""} ${htmlClass}`}
                 onChange={onValueChanged}>
