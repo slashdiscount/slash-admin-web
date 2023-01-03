@@ -10,6 +10,8 @@ import EditUser from "../Users/EditUser";
 import UserRewards from "../Users/Rewards/UserRewards";
 import Transactions from "../Transactions/Transactions";
 import UserRefferals from "../Users/Refferals/UserRefferals";
+import FreeUsers from '../FreeUsers/FreeUsers'
+import CreateFreeUser from "../FreeUsers/CreateFreeUser";
 import Contents from "../Contents/Contents";
 import EditContents from "../Contents/EditContents";
 const Admin: React.FC = () => {
@@ -29,6 +31,8 @@ const Admin: React.FC = () => {
               <Route path={`/user-rewards/:id`}><UserRewards /></Route>
               <Route path={`/transactions`}><Transactions /></Route>
               <Route path={`/user-refferals/:id`}><UserRefferals /></Route>
+              <Route path={`/free-users`}><FreeUsers /></Route>
+              <Route path={`/create-free-user`}><CreateFreeUser /></Route>
               <Route path={`/contents`}><Contents /></Route>
               <Route path={`/edit-content`}><EditContents /></Route>
               <Route path="/"><DashBoard /></Route>
