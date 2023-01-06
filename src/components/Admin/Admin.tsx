@@ -12,6 +12,9 @@ import Transactions from "../Transactions/Transactions";
 import UserRefferals from "../Users/Refferals/UserRefferals";
 import Contents from "../Contents/Contents";
 import EditContents from "../Contents/EditContents";
+import UserDeviceRequest from "../UserDeviceRequest/UserDeviceRequest"
+import UserDeviceListByUserId from "../UserDeviceRequest/UserDeviceByUserId/UserDeviceDetailsByUserId";
+
 const Admin: React.FC = () => {
 
   return (
@@ -31,6 +34,8 @@ const Admin: React.FC = () => {
               <Route path={`/user-refferals/:id`}><UserRefferals /></Route>
               <Route path={`/contents`}><Contents /></Route>
               <Route path={`/edit-content`}><EditContents /></Route>
+              <Route path={`/user-device-request`}><UserDeviceRequest /></Route>
+              <Route path={`/device-details-by-userId`}><UserDeviceListByUserId /></Route>
               <Route path="/"><DashBoard /></Route>
             </Switch>
           </div>
