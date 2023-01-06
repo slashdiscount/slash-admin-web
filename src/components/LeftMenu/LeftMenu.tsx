@@ -61,6 +61,13 @@ const LeftMenu: React.FC = () => {
                         <span>Contents</span>
                     </Link>
                 </li> 
+                <hr className="sidebar-divider my-0" />
+                <li className="nav-item">
+                    <Link className="nav-link" to={`/user-device-request`}>
+                        <i className="fas fa-fw fa-bars"></i>
+                        <span>User Device Requests</span>
+                    </Link>
+                </li> 
             </ul>
         </Fragment>
     );
